@@ -1,0 +1,594 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+    <meta name='viewport' content='width=device-width initial-scale=1'>
+<title>readme</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit inherit; background-repeat: inherit inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+@media screen and (max-width: 500px) { 
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; }
+button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 2; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.701961); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px !important; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror-linenumber { }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit inherit; background-repeat: inherit inherit; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; background-repeat: initial initial; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print { 
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid-page; break-before: avoid-page; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { padding-left: 32px; padding-right: 32px; padding-bottom: 0px; break-after: avoid-page; }
+  .typora-export #write::after { height: 0px; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; background-position: initial initial; background-repeat: initial initial; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) { 
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; background-position: initial initial; background-repeat: initial initial; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; }
+a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; background-repeat: initial initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+svg[id^="mermaidChart"] { line-height: 1em; }
+mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); background-position: initial initial; background-repeat: initial initial; }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
+
+
+.CodeMirror { height: auto; }
+.CodeMirror.cm-s-inner { background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit inherit; background-repeat: inherit inherit; }
+.CodeMirror-scroll { overflow-y: hidden; overflow-x: auto; z-index: 3; }
+.CodeMirror-gutter-filler, .CodeMirror-scrollbar-filler { background-color: rgb(255, 255, 255); }
+.CodeMirror-gutters { border-right-width: 1px; border-right-style: solid; border-right-color: rgb(221, 221, 221); background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; white-space: nowrap; background-position: inherit inherit; background-repeat: inherit inherit; }
+.CodeMirror-linenumber { padding: 0px 3px 0px 5px; text-align: right; color: rgb(153, 153, 153); }
+.cm-s-inner .cm-keyword { color: rgb(119, 0, 136); }
+.cm-s-inner .cm-atom, .cm-s-inner.cm-atom { color: rgb(34, 17, 153); }
+.cm-s-inner .cm-number { color: rgb(17, 102, 68); }
+.cm-s-inner .cm-def { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-variable { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-variable-2 { color: rgb(0, 85, 170); }
+.cm-s-inner .cm-variable-3 { color: rgb(0, 136, 85); }
+.cm-s-inner .cm-string { color: rgb(170, 17, 17); }
+.cm-s-inner .cm-property { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-operator { color: rgb(152, 26, 26); }
+.cm-s-inner .cm-comment, .cm-s-inner.cm-comment { color: rgb(170, 85, 0); }
+.cm-s-inner .cm-string-2 { color: rgb(255, 85, 0); }
+.cm-s-inner .cm-meta { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-qualifier { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-builtin { color: rgb(51, 0, 170); }
+.cm-s-inner .cm-bracket { color: rgb(153, 153, 119); }
+.cm-s-inner .cm-tag { color: rgb(17, 119, 0); }
+.cm-s-inner .cm-attribute { color: rgb(0, 0, 204); }
+.cm-s-inner .cm-header, .cm-s-inner.cm-header { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-quote, .cm-s-inner.cm-quote { color: rgb(0, 153, 0); }
+.cm-s-inner .cm-hr, .cm-s-inner.cm-hr { color: rgb(153, 153, 153); }
+.cm-s-inner .cm-link, .cm-s-inner.cm-link { color: rgb(0, 0, 204); }
+.cm-negative { color: rgb(221, 68, 68); }
+.cm-positive { color: rgb(34, 153, 34); }
+.cm-header, .cm-strong { font-weight: 700; }
+.cm-del { text-decoration: line-through; }
+.cm-em { font-style: italic; }
+.cm-link { text-decoration: underline; }
+.cm-error { color: red; }
+.cm-invalidchar { color: red; }
+.cm-constant { color: rgb(38, 139, 210); }
+.cm-defined { color: rgb(181, 137, 0); }
+div.CodeMirror span.CodeMirror-matchingbracket { color: rgb(0, 255, 0); }
+div.CodeMirror span.CodeMirror-nonmatchingbracket { color: rgb(255, 34, 34); }
+.cm-s-inner .CodeMirror-activeline-background { background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit inherit; background-repeat: inherit inherit; }
+.CodeMirror { position: relative; overflow: hidden; }
+.CodeMirror-scroll { height: 100%; outline: 0px; position: relative; box-sizing: content-box; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit inherit; background-repeat: inherit inherit; }
+.CodeMirror-sizer { position: relative; }
+.CodeMirror-gutter-filler, .CodeMirror-hscrollbar, .CodeMirror-scrollbar-filler, .CodeMirror-vscrollbar { position: absolute; z-index: 6; display: none; }
+.CodeMirror-vscrollbar { right: 0px; top: 0px; overflow: hidden; }
+.CodeMirror-hscrollbar { bottom: 0px; left: 0px; overflow: hidden; }
+.CodeMirror-scrollbar-filler { right: 0px; bottom: 0px; }
+.CodeMirror-gutter-filler { left: 0px; bottom: 0px; }
+.CodeMirror-gutters { position: absolute; left: 0px; top: 0px; padding-bottom: 30px; z-index: 3; }
+.CodeMirror-gutter { white-space: normal; height: 100%; box-sizing: content-box; padding-bottom: 30px; margin-bottom: -32px; display: inline-block; }
+.CodeMirror-gutter-wrapper { position: absolute; z-index: 4; border: none !important; background-position: 0px 0px !important; background-repeat: initial initial !important; }
+.CodeMirror-gutter-background { position: absolute; top: 0px; bottom: 0px; z-index: 4; }
+.CodeMirror-gutter-elt { position: absolute; cursor: default; z-index: 4; }
+.CodeMirror-lines { cursor: text; }
+.CodeMirror pre { border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-width: 0px; font-family: inherit; font-size: inherit; margin: 0px; white-space: pre; word-wrap: normal; color: inherit; z-index: 2; position: relative; overflow: visible; background-position: 0px 0px; background-repeat: initial initial; }
+.CodeMirror-wrap pre { word-wrap: break-word; white-space: pre-wrap; word-break: normal; }
+.CodeMirror-code pre { border-right-width: 30px; border-right-style: solid; border-right-color: transparent; width: fit-content; }
+.CodeMirror-wrap .CodeMirror-code pre { border-right-style: none; width: auto; }
+.CodeMirror-linebackground { position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px; z-index: 0; }
+.CodeMirror-linewidget { position: relative; z-index: 2; overflow: auto; }
+.CodeMirror-wrap .CodeMirror-scroll { overflow-x: hidden; }
+.CodeMirror-measure { position: absolute; width: 100%; height: 0px; overflow: hidden; visibility: hidden; }
+.CodeMirror-measure pre { position: static; }
+.CodeMirror div.CodeMirror-cursor { position: absolute; visibility: hidden; border-right-style: none; width: 0px; }
+.CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+.CodeMirror-focused div.CodeMirror-cursor { visibility: inherit; }
+.cm-searching { background-color: rgba(255, 255, 0, 0.4); background-position: initial initial; background-repeat: initial initial; }
+@media print { 
+  .CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+}
+
+
+:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    padding-bottom: .3em;
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+   padding-bottom: .3em;
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border-top: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table tr th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table tr th:first-child,
+table tr td:first-child {
+    margin-top: 0;
+}
+table tr th:last-child,
+table tr td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    table,
+    pre {
+        page-break-inside: avoid;
+    }
+    pre {
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+.html-for-mac .context-menu {
+    --item-hover-bg-color: #E6F0FE;
+}
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+
+</style>
+</head>
+<body class='typora-export' >
+<div  id='write'  class = 'is-mac'><h1><a name="intent-annotation-of-recommendation-dialogue-iard-dataset" class="md-header-anchor"></a><strong><span>Intent Annotation of Recommendation Dialogue (IARD) Dataset</span></strong></h1><div class='md-toc' mdtype='toc'><p class="md-toc-content" role="list"><span role="listitem" class="md-toc-item md-toc-h1" data-ref="n0"><a class="md-toc-inner" style="" href="#intent-annotation-of-recommendation-dialogue-iard-dataset"><strong>Intent Annotation of Recommendation Dialogue (IARD) Dataset</strong></a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n3"><a class="md-toc-inner" style="" href="#introduction">Introduction</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n5"><a class="md-toc-inner" style="" href="#recommendation-dialogue-data">Recommendation Dialogue Data</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n50"><a class="md-toc-inner" style="" href="#taxonomies-for-user-intents-and-recommender-actions">Taxonomies for User Intents and Recommender Actions</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n52"><a class="md-toc-inner" style="" href="#taxonomy-for-user-intents">Taxonomy for User Intents</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n137"><a class="md-toc-inner" style="" href="#taxonomy-for-recommender-actions">Taxonomy for Recommender Actions</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n203"><a class="md-toc-inner" style="" href="#iard-dataset">IARD Dataset</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n204"><a class="md-toc-inner" style="" href="#data-annotation">Data Annotation</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n206"><a class="md-toc-inner" style="" href="#download">Download</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n208"><a class="md-toc-inner" style="" href="#data-fields">Data Fields</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n239"><a class="md-toc-inner" style="" href="#citation">Citation</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n247"><a class="md-toc-inner" style="" href="#usage-license">Usage License</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n262"><a class="md-toc-inner" style="" href="#acknowledgement">Acknowledgement</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n265"><a class="md-toc-inner" style="" href="#references">References</a></span></p></div><h2><a name="introduction" class="md-header-anchor"></a><span>Introduction</span></h2><p><span>The IARD dataset is a labeled recommendation dialogue dataset (the raw dialogues are from </span><a href="https://redialdata.github.io/website/" target='_blank'><span>ReDial</span></a><span> [</span><a href='#ref1'><span>1</span></a><span>]). This dataset contains 336 multi-turn recommendation dialogues with 4,583 utterances that were annotated with user intents and recommender actions at the utterance level. In the following, we will introduce the dialogue data we have collected and processed, the two taxonomies we have established respectively for user intents and recommender actions, and our IARD dataset (more details can be found in [</span><a href='#ref2'><span>2</span></a><span>]).</span></p><h2><a name="recommendation-dialogue-data" class="md-header-anchor"></a><span>Recommendation Dialogue Data</span></h2><p><span>The raw recommendation dialogues are from the </span><a href="https://redialdata.github.io/website/" target='_blank'><span>ReDial</span></a><span> dataset, which is a publicly available dataset centered around movie recommendations according to [</span><a href='#ref1'><span>1</span></a><span>]. It was collected by a team of researchers working at Polytechnique Montréal, MILA - Quebec AI Institute, Microsoft Research Montréal, HEC Montreal, and Element AI. </span></p><p><span>Specifically, the ReDial dataset was collected through an interface where workers (from Amazon Mechanical Turk) were paired to accomplish a movie recommendation task using natural language. For each pair, one worker was given the role &quot;seeker&quot; who was to seek for interested movies, and the other played the role &quot;recommender&quot; who was responsible for giving recommendations to the seeker. Every conversation session involved at least four movies, and at the end both seeker and recommender were asked some reflective questions for each mentioned movie (e.g., </span><em><span>&quot;Was the movie suggested by the recommender?&quot; &quot;Has the seeker seen the movie?&quot; &quot;Did the seeker like the movie suggestion?&quot;</span></em><span>) that can be used to check their responses&#39; consistency. </span></p><p><span>We processed the raw dialogue data in ReDial (that contains 11,348 dialogues) by performing the following four steps:</span></p><ol start='' ><li><span>We filtered out dialogues that contain less than three dialogue turns (one dialogue turn denotes a consecutive utterance-response pair: Utterance is from seeker and response is from recommender) and less than four different recommended movies.</span></li><li><span>We removed those with inconsistent answers from seekers and recommenders to the post-conversation reflective questions.</span></li><li><span>We then randomly sampled some satisfactory recommendation dialogues (SAT-Dial) where one recommended movie was not liked by the seeker but a subsequent one was accepted by her/him. These dialogues were aimed to capture the seeker&#39;s feedback intents about the recommendation when s/he was not satisfied with it, and furthermore the actions taken by the human recommender that helped the seeker to find a satisfactory item later.</span></li><li><span>We also sampled some unsatisfactory recommendation dialogues (unSAT-Dial) by choosing the dialogues that do not contain any recommendations accepted by the seeker. These dialogues can be useful for detecting what kind of interaction may lead to unsuccessful recommendation. </span></li></ol><p><span>Finally, we got 253 satisfactory dialogues (SAT-Dial) and 83 unsatisfactory dialogues (unSAT-Dial) (see </span><a href='#table1'><span>Table 1</span></a><span> with the statistics).</span></p><p><strong><a name="table1"><span>Table 1</span></a><span>: Statistics of our selected dialogue data (from ReDial)</span></strong></p><figure><table><thead><tr><th style='text-align:left;' >&nbsp;</th><th style='text-align:left;' ><span>SAT-Dial (with user-satisfied recommendation)</span></th><th><span>unSAT-Dial (without user-satisfied recommendation)</span></th></tr></thead><tbody><tr><td style='text-align:left;' ><span># Conversations</span></td><td style='text-align:left;' ><span>253</span></td><td><span>83</span></td></tr><tr><td style='text-align:left;' ><span># Human seekers</span></td><td style='text-align:left;' ><span>125 (# utterances: 1,711)</span></td><td><span>59 (# utterances: 550)</span></td></tr><tr><td style='text-align:left;' ><span># Human recommenders</span></td><td style='text-align:left;' ><span>151 (# utterances: 1,747)</span></td><td><span>68 (# utterances: 575)</span></td></tr><tr><td style='text-align:left;' ><span>#</span><span> Recommended movies per dialogue</span></td><td style='text-align:left;' ><span>4.57</span></td><td><span>4.51</span></td></tr><tr><td style='text-align:left;' ><span># Turns per dialogue</span></td><td style='text-align:left;' ><span>mean=6.58, min=3, max=19</span></td><td><span>mean=6.49, min=3, max=12</span></td></tr><tr><td style='text-align:left;' ><span># Words per utterance</span></td><td style='text-align:left;' ><span>mean=11.29, min=1, max=72</span></td><td><span>mean=10.72, min=1, max=69</span></td></tr></tbody></table></figure><p>&nbsp;</p><h2><a name="taxonomies-for-user-intents-and-recommender-actions" class="md-header-anchor"></a><span>Taxonomies for User Intents and Recommender Actions</span></h2><p><span>We examined the above-selected recommendation dialogues, in order to understand the language interaction between users (seekers) and human recommenders, based on which we have developed two hierarchical taxonomies for user intents and recommender actions respectively, by using a grounded theory approach (see more details in [</span><a href='#ref2'><span>2</span></a><span>]).</span></p><h3><a name="taxonomy-for-user-intents" class="md-header-anchor"></a><span>Taxonomy for User Intents</span></h3><p><span>The established taxonomy for user intents is aimed to classify the types of utterance inputted by recommendation seekers. We have come up with 3 top-level intents (i.e., </span><strong><span>Ask for Recommendation</span></strong><span>, </span><strong><span>Add Details</span></strong><span>, and </span><strong><span>Give Feedback</span></strong><span>), and 15 sub-intents (see </span><a href='#table2'><span>Table 2</span></a><span>).</span></p><p><strong><a name="table2"><span>Table 2</span></a><span>: Taxonomy for user intents</span></strong></p>
+
+
+<figure><table><thead><tr><th><span>Intent (Code)</span></th><th><span>Description</span></th><th><span>Example</span></th></tr></thead><tbody><tr><td colspan="3"><strong><span>Ask for Recommendation</span></strong></td></tr><tr><td><span>Initial Query (IQU)</span></td><td><span>Seeker asks for a recommendation in the first query.</span></td><td><em><span>&quot;I like comedy do you know of any good ones?&quot;</span></em></td></tr><tr><td><span>Continue (CON)</span></td><td><span>Seeker asks for more recommendations in the subsequent query.</span></td><td><em><span>&quot;Do you have any other suggestions?&quot;</span></em></td></tr><tr><td><span>Reformulate (REF)</span></td><td><span>Seeker restates her/his query with or without clarification/further constraints.</span></td><td><em><span>&quot;Maybe I am not being clear. I want something that is in the theater now.&quot;</span></em></td></tr><tr><td><span>Start Over (STO)</span></td><td><span>Seeker starts a new query to ask for recommendations.</span></td><td><em><span>&quot;Anything that I can watch with my kids under 10.&quot;</span></em></td></tr><tr><td colspan="3"><strong><span>Add Details</span></strong></td></tr><tr><td><span>Provide Preference (PRO)</span></td><td><span>Seeker provides specific preference for the item s/he is looking for.</span></td><td><em><span>&quot;I usually enjoy movies with Seth Rogen and Jonah Hill.&quot;</span></em></td></tr><tr><td><span>Answer (ANS)</span></td><td><span>Seeker answers the question issued by the recommender.</span></td><td><em><span>&quot;Maybe something with more action.&quot; (Q: &quot;What kind of fun movie you look for?&quot;)</span></em></td></tr><tr><td><span>Ask Opinion (ASK)</span></td><td><span>Seeker asks the recommender&#39;s personal opinions.</span></td><td><em><span>&quot;I really like Reese Witherspoon. How about you?&quot;</span></em></td></tr><tr><td colspan="3"><strong><span>Give Feedback</span></strong></td></tr><tr><td><span>Seen (SEE)</span></td><td><span>Seeker has seen the recommended item before.</span></td><td><em><span>&quot;I have seen that one and enjoyed it.&quot;</span></em></td></tr><tr><td><span>Accept (ACC)</span></td><td><span>Seeker likes the recommended item.</span></td><td><em><span>&quot;Awesome, I will check it out.&quot;</span></em></td></tr><tr><td><span>Reject (REJ)</span></td><td><span>Seeker dislikes the recommended item.</span></td><td><em><span>&quot;I hated that movie. I did not even crack a smile once.&quot;</span></em></td></tr><tr><td><span>Inquire (INQ)</span></td><td><span>Seeker wants to know more about the recommended item.</span></td><td><em><span>&quot;I haven&#39;t seen that one yet. What&#39;s it about?&quot;</span></em></td></tr><tr><td><span>Critique-Feature (CRI-F)</span></td><td><span>Seeker makes critiques on specific features of the current recommendation.</span></td><td><em><span>&quot;That&#39;s a bit too scary for me.&quot;</span></em></td></tr><tr><td><span>Critique-Add (CRI-A)</span></td><td><span>Seeker adds further constraints on top of the current recommendation.</span></td><td><em><span>&quot;I would like something more recent.&quot;</span></em></td></tr><tr><td><span>Neutral Response (NRE)</span></td><td><span>Seeker does not indicate her/his preference for the current recommendation.</span></td><td><em><span>&quot;I have actually never seen that one.&quot;</span></em></td></tr><tr><td><span>Critique-Compare (CRI-C)</span></td><td><span>Seeker requests sth similar to the current recommendation in order to compare.</span></td><td><em><span>&quot;Den of Thieves (2018) sounds amazing. Any others like that?&quot;</span></em></td></tr><tr><td><strong><span>Others</span></strong></td><td><span>Greetings, gratitude expression, or chit-chat utterances.</span></td><td><em><span>&quot;Sorry about the weird typing.&quot;</span></em></td></tr></tbody></table></figure>
+
+
+<h3><a name="taxonomy-for-recommender-actions" class="md-header-anchor"></a><span>Taxonomy for Recommender Actions</span></h3><p><span>From recommenders&#39; perspective, we have characterized their behavior at 4 top-level actions (i.e., </span><strong><span>Request</span></strong><span>, </span><strong><span>Respond</span></strong><span>, </span><strong><span>Recommend</span></strong><span>, and </span><strong><span>Explain</span></strong><span>) and 9 sub-actions (see </span><a href='#table3'><span>Table 3</span></a><span>).</span></p><p><strong><a name="table3"><span>Table 3</span></a><span>: Taxonomy for recommender actions</span></strong></p>
+
+
+<figure><table><thead><tr><th><span>Action (Code)</span></th><th><span>Description</span></th><th><span>Example</span></th></tr></thead><tbody><tr><td colspan="3"><strong><span>Request</span></strong></td></tr><tr><td><span>Request Information (REQ)</span></td><td><span>Recommender requests for the seeker&#39;s preference or feedback.</span></td><td><em><span>&quot;What kind of movies do you like?&quot;</span></em></td></tr><tr><td><span>Clarify Question (CLA)</span></td><td><span>Recommender asks a clarifying question for more details.</span></td><td><em><span>&quot;What kind of animated movie are you thinking of?&quot;</span></em></td></tr><tr><td colspan="3"><strong><span>Respond</span></strong></td></tr><tr><td><span>Respond-Feedback (RES)</span></td><td><span>Recommender responds to any other feedback from the seeker.</span></td><td><em><span>&quot;That&#39;s my favourite Christmas movie too! &quot; (U: &quot;My absolute favourite!!&quot;)</span></em></td></tr><tr><td><span>Answer (ANS)</span></td><td><span>Recommender answers the question asked by the seeker.</span></td><td><em><span>&quot;Steve Martin and John Candy.&quot; (Q: &quot;Who is in that?&quot;)</span></em></td></tr><tr><td colspan="3"><strong><span>Recommend</span></strong></td></tr><tr><td><span>Recommend-Show (REC-S)</span></td><td><span>Recommender provides recommendation by showing it directly.</span></td><td><em><span>&quot;The Invitation (2015) is a movie kids like.&quot;</span></em></td></tr><tr><td><span>Recommend-Explore (REC-E)</span></td><td><span>Recommender provides recommendation by inquiring about the seeker&#39;s preference.</span></td><td><em><span>&quot;Have you seen Cult of Chucky (2017) that one as pretty scary.&quot;</span></em></td></tr><tr><td colspan="3"><strong><span>Explain</span></strong></td></tr><tr><td><span>Explain-Introduction (EXP-I)</span></td><td><span>Recommender explains recommendation with non-personalized introduction.</span></td><td><em><span>&quot;What about Sleepless in Seattle (1993)? Hanks and Ryan?&quot;</span></em></td></tr><tr><td><span>Explain-Preference (EXP-P)</span></td><td><span>Recommender explains recommendation based on the seeker&#39;s past preference.</span></td><td><em><span>&quot;Will Ferrell is also very good in Elf (2003) if you&#39;re in need of another comedy&quot;</span></em></td></tr><tr><td><span>Explain-Suggestion (EXP-S)</span></td><td><span>Recommender explains recommendation in a suggestive way.</span></td><td><em><span>&quot;If you like gory then I would suggest The Last House on the Left (2009).&quot;</span></em></td></tr><tr><td><strong><span>Others</span></strong></td><td><span>Greetings, gratitude expression, or chit-chat utterances.</span></td><td><em><span>&quot;Have a good night.&quot;</span></em></td></tr></tbody></table></figure>
+
+<p>&nbsp;</p><h2><a name="iard-dataset" class="md-header-anchor"></a><span>IARD Dataset</span></h2><h3><a name="data-annotation" class="md-header-anchor"></a><span>Data Annotation</span></h3><p><span>After the two taxonomies were established, we asked two annotators to label all of the selected dialogue data (see </span><a href='#table1'><span>Table 1</span></a><span>). Concretely, for each seeker utterance or recommender response, the annotator was encouraged to choose all suitable code(s) that s/he thinks can represent the seeker&#39;s intent(s) or the recommender&#39;s action(s). They first independently labeled 30 random dialogues, and then met to discuss and resolve any disagreements to ensure annotation quality and consistency, before they started to label the remaining dialogues. For all of the labeled dialogues, the average inter-rater agreement scores (Cohen&#39;s kappa [</span><a href='#ref3'><span>3</span></a><span>] across 15 sub-intents and 9 sub-actions are respectively 0.75 (min=0.50, max=0.95) and 0.82 (min=0.50, max=0.96), which indicate satisfactory agreement according to the interrater reliability [</span><a href='#ref4'><span>4</span></a><span>].</span></p><h3><a name="download" class="md-header-anchor"></a><span>Download</span></h3><p><span>Please download the IARD dataset from </span><a href="https://github.com/wanlingcai1997/umap_2020_IARD.git" target='_blank'><span>github</span></a><span>. </span></p><h3><a name="data-fields" class="md-header-anchor"></a><span>Data Fields</span></h3><ul><li><p><strong><span>conversation_id</span></strong><span>: a unique id for the conversation (consistent with the &quot;conversation id&quot; in the original </span><a href="https://redialdata.github.io/website/" target='_blank'><span>ReDial</span></a><span> dataset [</span><a href='#ref1'><span>1</span></a><span>])</span></p></li><li><p><strong><span>accepted_recommendation</span></strong><span>: an array that contains positions of utterances where the seeker accepted the recommended item(s) suggested by the recommender (if there is no accepted recommendation, it is an empty array.)</span></p></li><li><p><strong><span>dialogue_info</span></strong><span>: all of the utterances in the current conversation. For each utterance, there is a unique id (i.e, utterance_id) and its associated information (e.g., utterance position, utterance text).</span></p><ul><li><p><strong><span>utterance_id</span></strong><span>: a unique id for an utterance, e.g., &quot;S1, R2&quot;. Note that for seeker utterance, its id starts with &#39;S&#39;; for recommender response, its id starts with &#39;R&#39;; and the contained digital number refers to the utterance position in the conversation.</span></p><ul><li><strong><span>utterance_pos</span></strong><span>: the utterance position in the conversation</span></li><li><strong><span>worker_id</span></strong><span>: the id of the worker in AMT (according to the original </span><a href="https://redialdata.github.io/website/" target='_blank'><span>ReDial</span></a><span> dataset [</span><a href='#ref1'><span>1</span></a><span>])</span></li><li><strong><span>role</span></strong><span>: the role of the worker (i.e., &quot;recommender&quot; or &quot;seeker&quot;)</span></li><li><strong><span>utterance_text</span></strong><span>: the utterance&#39;s content</span></li><li><strong><span>top-level intent/action</span></strong><span>:  the top-level intent(s)/action(s) labeled for the current utterance (that can be seeker utterance or recommender response)</span></li><li><strong><span>sub-intent/action</span></strong><span>: the sub-intent(s)/action(s) labeled for the current utterance (that can be seeker utterance or recommender response)</span></li></ul></li></ul></li></ul><p><span>Note:</span></p><ul><li><span>For each movie mentioned in the conversation, we include both the </span><strong><span>movie_id</span></strong><span> and </span><strong><span>movie_name</span></strong><span> in the </span><strong><span>utterance_text</span></strong><span> (e.g., &quot;Me too. Another good one is @124485 &lt;Spaceballs (1987)&gt;.&quot;).</span></li></ul><p><strong><span>Example Data Format</span></strong></p><pre spellcheck="false" class="md-fences md-end-block ty-contain-cm modeLoaded" lang="" style="page-break-inside: unset;"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang=""><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">"1057": {</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">  </span>"accepted_recommendation": [11],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">  </span>"dialogue_info": {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-tab" role="presentation" cm-text="	">  </span>"S1": {...}</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-tab" role="presentation" cm-text="	">  </span>...</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-tab" role="presentation" cm-text="	">  </span>"R6": {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-tab" role="presentation" cm-text="	">  </span>"utterance_pos": 6,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-tab" role="presentation" cm-text="	">  </span>"worker_id": 66,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-tab" role="presentation" cm-text="	">  </span>"role": "recommender",</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-tab" role="presentation" cm-text="	">  </span>"utterance_text": "Me too. Another good one is @124485 &lt;Spaceballs (1987)&gt; ",</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-tab" role="presentation" cm-text="	">  </span>"top-level intent/action": ["Recommend","Explain"],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-tab" role="presentation" cm-text="	">  </span>"sub-intent/action": ["REC-S","EXP-I"]</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-tab" role="presentation" cm-text="	">  </span>},</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-tab" role="presentation" cm-text="	">  </span>"S7": {</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-tab" role="presentation" cm-text="	">  </span>"utterance_pos": 7,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-tab" role="presentation" cm-text="	">  </span>"worker_id": 14,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;  "role": "seeker",</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; <span class="cm-tab" role="presentation" cm-text="	"> </span><span class="cm-tab" role="presentation" cm-text="	">  </span>"utterance_text": "I did see that one, but I didn't really like it...I do love 80s movies though",</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;  "top-level intent/action": ["GiveFeedback"],</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;  "sub-intent/action": ["REJ","CRI-A"]</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-tab" role="presentation" cm-text="	">  </span>},</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-tab" role="presentation" cm-text="	">  </span>...</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">  </span>}</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 550px;"></div><div class="CodeMirror-gutters" style="display: none; height: 550px;"></div></div></div></pre><p>&nbsp;</p><h2><a name="citation" class="md-header-anchor"></a><span>Citation</span></h2><p><span>If you use IARD dataset for your research work, please cite the following paper:</span></p><ul><li><span>Wanling Cai and Li Chen. 2020. Predicting User Intents and Satisfaction with Dialogue-based Conversational Recommendations. In </span><em><span>Proceedings of the 28th ACM Conference on User Modeling, Adaptation and Personalization (UMAP &#39;20)</span></em><span>, July 14-17, 2020.</span></li></ul><p><strong><span>Bibtex entry:</span></strong></p><pre spellcheck="false" class="md-fences md-end-block ty-contain-cm modeLoaded" lang="latex"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="latex"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 8px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">@inproceedings<span class="cm-bracket">{</span>IARD,</span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  author = <span class="cm-bracket">{</span>Wanling Cai and Li Chen<span class="cm-bracket">}</span>,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  title = <span class="cm-bracket">{</span>Predicting User Intents and Satisfaction with Dialogue-based Conversational Recommendations<span class="cm-bracket">}</span>,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  booktitle = <span class="cm-bracket">{</span>Proceedings of the 28th ACM Conference on User Modeling, Adaptation and Personalization<span class="cm-bracket">}</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  series = <span class="cm-bracket">{</span>UMAP '20<span class="cm-bracket">}</span>,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">  year = <span class="cm-bracket">{</span><span class="cm-atom">2020</span><span class="cm-bracket">}</span>,</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-bracket">}</span> </span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 198px;"></div><div class="CodeMirror-gutters" style="display: none; height: 198px;"></div></div></div></pre><p>&nbsp;</p><h2><a name="usage-license" class="md-header-anchor"></a><span>Usage License</span></h2><p><span>The IARD dataset can be used for any research purposes under the following condition:</span></p><ul><li><span>The user may not imply any endorsement from the authors of the paper or Hong Kong Baptist University.</span></li><li><span>The user must acknowledge the use of the IARD dataset in her/his publications (see above for the citation information).</span></li><li><span>The user may redistribute the dataset as long as it is distributed under the same license conditions.</span></li><li><span>The user can not use this dataset for any commercial or revenue-bearing purposes, without obtaining permission from the authors of [</span><a href='#ref2'><span>2</span></a><span>] (i.e., Wanling Cai and Li Chen).</span></li></ul><p><span>Neither Hong Kong Baptist University nor any of the researchers involved can guarantee the correctness of the data, its suitability for any particular purpose, or the validity of results based on the use of the dataset.</span></p><p><span>In no event shall Hong Kong Baptist University and its affiliates or employees be liable to you for any damages arising out of the use or inability to use the data (including but not limited to loss of data or data being rendered inaccurately).</span></p><p><span>If you have any questions, please feel free to send us an email (</span><a href='mailto:cswlcai@comp.hkbu.edu.hk'><span>cswlcai@comp.hkbu.edu.hk</span></a><span> and </span><a href='mailto:lichen@comp.hkbu.edu.hk'><span>lichen@comp.hkbu.edu.hk</span></a><span>).</span></p><p>&nbsp;</p><h2><a name="acknowledgement" class="md-header-anchor"></a><span>Acknowledgement</span></h2><p><span>This work was partially supported by Hong Kong Baptist University IRCMS Project (IRCMS/19-20/D05). We also thank Ms. Yangyang Zheng for her assistance in annotating.</span></p><p>&nbsp;</p><h2><a name="references" class="md-header-anchor"></a><span>References</span></h2><p><a name="ref1"><span> [1]</span></a><span> Raymond Li, Samira Ebrahimi Kahou, Hannes Schulz, Vincent Michalski, Laurent Charlin, and Chris Pal. 2018. Towards Deep Conversational Recommendations. In </span><em><span>Advances in Neural Information Processing Systems 31 (NIPS &#39;18)</span></em><span>. 9748-9758.</span></p><p><a name="ref2"><span> [2]</span></a><span> Wanling Cai and Li Chen. 2020. Predicting User Intents and Satisfaction with Dialogue-based Conversational Recommendations. In </span><em><span>Proceedings of the 28th ACM Conference on User Modeling, Adaptation and Personalization (UMAP &#39;20)</span></em><span>, July 14-17, 2020.</span></p><p><a name="ref3"><span> [3]</span></a><span> Jacob Cohen. 1960. A Coefficient of Agreement for Nominal Scales. </span><em><span>Educational and Psychological Measurement 20</span></em><span>, 1 (1960), 37-46.</span></p><p><a name="ref4"><span> [4]</span></a><span> Mary L McHugh. 2012. Interrater Reliability: the Kappa Statistic. </span><em><span>Biochemia Medica 22, 3 (2012)</span></em><span>, 276-282.</span></p></div>
+</body>
+</html>
