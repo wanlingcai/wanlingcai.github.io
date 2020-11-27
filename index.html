@@ -3,7 +3,7 @@
 <title>Wanling Cai, Ph.D. Candidate</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- <link rel="shortcut icon" href="https://www.comp.hkbu.edu.hk/v1/images/favicon.ico"> -->
+<link rel="shortcut icon" href="https://www.comp.hkbu.edu.hk/v1/images/favicon.ico">
 <link rel="stylesheet" href="assets/css/w3.css" />
 <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway"> -->
 <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
@@ -30,12 +30,19 @@ body, html {
   font-weight:600;
 }
 
+.cli{
+  display: block;
+  height: 60px; /*和顶部fixed的高度一致*/
+  margin-top: -60px; /*和顶部fixed的高度一致*/
+  visibility: hidden;
+}
+
 </style>
 
 <body>
 
 <!-- Navbar (sit on top) -->
-<div class="w3-top">
+<div class="w3-top display:block">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
     <div class="w3-bar-item w3-button">&nbsp;&nbsp; Wanling CAI &nbsp;&nbsp; </div>
     <!-- Right-sided navbar links -->
@@ -124,7 +131,8 @@ body, html {
       </ul>
     </div>
     <!-- Section: Publication -->
-    <div class="w3-container" style="padding:32px 32px" id="publications">
+    <div class="cli" id="publications"></div>
+    <div class="w3-container" style="padding:32px 32px">
       <h4>Publications</h4>
         <ol>
           <li>
@@ -194,8 +202,10 @@ body, html {
         </ul>
       
     </div>
+    
+    <div class="cli" id="services"></div>
     <!-- Section: Professional  Services -->
-    <div class="w3-container" style="padding:32px 32px" id="services"> 
+    <div class="w3-container" style="padding:32px 32px"> 
       <h4>Professional  Services</h4>
       Reviewer
       <ul>
@@ -217,7 +227,8 @@ body, html {
       </ul>
     </div>
     <!-- Section: Teaching -->
-    <div class="w3-container" style="padding:32px 32px" id="teaching-assistant"> 
+    <div class="cli" id="teaching-assistant"></div>
+    <div class="w3-container" style="padding:32px 32px"> 
       <h4>Teaching Assistant</h4>
       <ul>
         <li>COMP 3925 Data Analysis Studio
@@ -232,7 +243,8 @@ body, html {
         </li>
     </div>
     <!-- Section: Awards -->
-    <div class="w3-container" style="padding:32px 32px" id="awards"> 
+    <div class="cli" id="awards"></div>
+    <div class="w3-container" style="padding:32px 32px">
       <h4>Awards</h4>
       <ul>
         <li> 2018 - Present, Research Postgraduate Studentship, HKBU</li>
@@ -269,7 +281,11 @@ body, html {
     <i class="fa fa-twitter w3-hover-opacity"></i>
     <i class="fa fa-linkedin w3-hover-opacity"></i>
   </div> -->
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <br>
+  <ul>
+    <li>Copyright © Wanling Cai. All rights reserved.</li>
+    </li>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></ul>
+  </ul> 
 </footer> 
  
 <script>
