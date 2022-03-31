@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<script src="https://kit.fontawesome.com/a822b03ab7.js" crossorigin="anonymous"></script>
 
 <style>
 body,h1,h2,h3,h4,h5,h6, p{font-family: "Arial", sans-serif}
@@ -18,7 +18,7 @@ h4{
 }
 
 h5{
-  color: #f58a42;
+  color: red;
 }
 
 body, html {
@@ -48,7 +48,7 @@ body, html {
 <!-- Navbar (sit on top) -->
 <div class="w3-top display:block">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <div class="w3-bar-item w3-button">&nbsp;&nbsp; Wanling CAI &nbsp;&nbsp; </div>
+    <div class="w3-bar-item w3-button"> &nbsp;&nbsp; Wanling CAI &nbsp;&nbsp; </div>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
       <a href="#about" class="w3-bar-item w3-button">About</a>
@@ -78,6 +78,7 @@ body, html {
 </div class="w3-row">
   <!-- Left Sidebar (1/4) Photo & News -->
   <div class="w3-col m4 l3">
+    <!-- Photos -->
     <div class="w3-container w3-center" style="padding:128px 16px" >
       <img src="images/WanlingCAI.jpg" class="w3-circle" alt="Wanling"  style="width:60%">
       <br>
@@ -92,11 +93,13 @@ body, html {
         <br>
       </div>
       <h2>
-        <a href="mailto:cswlcai@comp.hkbu.edu.hk"><i class="fa fa-envelope"></i></a>
+        <a href="mailto:cswlcai@comp.hkbu.edu.hk" title="cswlcai@comp.hkbu.edu.hk"><i class="fa-solid fa-envelope"></i></i></a>
         &nbsp; &nbsp; 
-        <a href="https://scholar.google.com/citations?hl=en&authuser=1&user=98F_PpsAAAAJ" ><i class="fab fa-google"></i></a>
+        <a href="https://scholar.google.com/citations?hl=en&authuser=1&user=98F_PpsAAAAJ" title="Google Scholar"><i class="fa-brands fa-google"></i></i></a>
         &nbsp; &nbsp; 
-        <a href="https://github.com/wanlingcai1997" ><i class="fab fa-github"></i></a>
+        <a href="https://github.com/wanlingcai1997" title = "GitHub"><i class="fa-brands fa-github"></i></i></a>
+        &nbsp; &nbsp;
+        <a href="files/Wanling_Cai_CV.pdf" target="_blank" title="Curriculum Vitae" ><i class="fa-regular fa-file-lines"></i></i></i></a>
         &nbsp; 
         <!-- <a href="xxx" ><i class="fa fa-linkedin"></i></a>
         &nbsp;  -->
@@ -105,6 +108,8 @@ body, html {
     </div> 
 
   </div>
+
+
   <!-- Right (3/4) Sections -->
   <div class="w3-col m8 l9" style="padding:96px 16px">
     <!-- Section: About -->
@@ -123,21 +128,25 @@ body, html {
     <div class="w3-container" style="padding:8px 32px"> 
       <h4>Research Interests</h4>
       <ul>
-        <li>Conversational AI</li>
-        <li>Recommender Systems</li>        
+        <li>Human-centered AI</li>
+        <li>Conversational Agents</li> 
+        <li>Recommender Systems</li>
         <li>Human-Computer Interaction</li>
-        <li>Intelligent User Interfaces</li>
+        <li>Health and Well-Being</li>
         <!-- <li>Machine Learning and Data Mining</li> -->
       </ul>
     </div>
+    
     <!-- Section: Education -->
-    <div class="w3-container" style="padding:8px 32px"> 
+    <!-- <div class="w3-container" style="padding:8px 32px"> 
       <h4>Education</h4>
       <ul>
         <li>September 2018 - Present, Ph.D. Student, Department of Computer Science, HKBU, Hong Kong, P.R. China. </li>
         <li>October 2014 - June 2018, B.Eng. (Hons) in Software Engineering at College of Computer Science and Software Engineering, SZU, Shenzhen, P.R. China.</li>
       </ul>
-    </div>
+    </div> -->
+
+
     <!-- Section: Publication -->
     <div class="cli" id="publications"></div>
     <div class="w3-container" style="padding:32px 32px">
@@ -147,9 +156,9 @@ body, html {
           <li>
             <strong><u>Wanling Cai</u></strong>, Yucheng Jin, and Li Chen.
             <b>Impacts of Personal Characteristics on User Trust in Conversational Recommender Systems.</b>
-            In: <i>Proceedings of the 40th ACM Conference on Human Factors in Computing Systems (CHI' 22)</i>, New Orleans, LA, April 30-May 5, 2022. <i>(to appear)</i>
-<!--             <br>
-            [<a href="https://ieeexplore.ieee.org/document/9674819" target="_blank">Publisher</a>] -->
+            In: <i>Proceedings of the 40th ACM Conference on Human Factors in Computing Systems (CHI' 22)</i>, New Orleans, LA, April 30-May 5, 2022. <span style="color:red">[Honourable Mention Award]</span>
+            <br>
+            [<a href="https://arxiv.org/abs/2203.12981" target="_blank">arXiv</a>]
           </li>
           <li>
             <strong><u>Wanling Cai</u></strong>, Yucheng Jin, and Li Chen.
