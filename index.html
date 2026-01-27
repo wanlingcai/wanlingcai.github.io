@@ -3,35 +3,47 @@
 <title>Wanling Cai, Reseacher in Human Computer Interaction</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- UCD ICON -->
 <link rel="shortcut icon" href="https://www.ucd.ie/t4media/crest-ucd.svg">
 <link rel="stylesheet" href="assets/css/w3.css" />
 <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway"> -->
 <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<!-- Bootstrap-->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/a822b03ab7.js" crossorigin="anonymous"></script>
 
 <style>
 body,h1,h2,h3,h4,h5,h6, p{font-family: "Arial", sans-serif}
-h4{
-  color: orange;
+h3{
+  color: #D94F04;
 }
 
 h5{
-  color: orange;
+  color:#025259;
 }
 
 
 
 h6{
-  color: goldenrod;
+  color: #025259;
 }
 
+a {
+  color: #2F5559;
+  text-decoration: none;
+}
 
+b{
+  color: #007172;
+  font-weight: 600;
+}
 
 .time_label
 {
-  color:grey;
+  color:#007172;
 }
 
 body, html {
@@ -59,16 +71,18 @@ body, html {
 <body>
 
 <!-- Navbar (sit on top) -->
-<div class="w3-top display:block">
-  <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <div class="w3-bar-item w3-button"> &nbsp;&nbsp; Wanling CAI &nbsp;&nbsp; </div>
+<div class="w3-top" style="position: sticky; width:100%; z-index:999; height: 60px;">
+  <div class="w3-bar w3-white w3-card" id="myNavbar" style="height:60px; background-color: #F4E2DE">
+    <div ref="#about" class="w3-bar-item w3-button"> &nbsp;&nbsp; Wanling Cai &nbsp;&nbsp; 
+  </div>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">About</a>
-      <a href="#publications" class="w3-bar-item w3-button">Publications</a>
-      <a href="#services" class="w3-bar-item w3-button">Professional Services</a>
-      <a href="#teaching-assistant" class="w3-bar-item w3-button">Teaching Assistant</a>
-      <a href="#awards" class="w3-bar-item w3-button">Awards</a>
+      <a href="#about" class="w3-bar-item w3-button me-5">About</a>
+      <a href="#publications" class="w3-bar-item w3-button me-5">Publications</a>
+      <a href="#teaching" class="w3-bar-item w3-button me-5">Teaching</a>
+      <a href="#services" class="w3-bar-item w3-button me-5">Services</a>
+
+      <!-- <a href="#awards" class="w3-bar-item w3-button">Awards</a> -->
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
@@ -78,13 +92,14 @@ body, html {
 </div>
 
 <!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
   <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
   <a href="#publications" onclick="w3_close()" class="w3-bar-item w3-button">Publications</a>
-  <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button">Professional Services</a>
   <a href="#teaching" onclick="w3_close()" class="w3-bar-item w3-button">Teaching</a>
-  <a href="#awards" onclick="w3_close()" class="w3-bar-item w3-button">Awards</a>
+  <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button">Services</a>
+
+  <!-- <a href="#awards" onclick="w3_close()" class="w3-bar-item w3-button">Awards</a> -->
 </nav>
 
 
@@ -93,10 +108,10 @@ body, html {
   <!-- Left Sidebar (1/4) Photo & News -->
   <div class="w3-col m4 l3" style="padding:32px 32px">
     <!-- Photos -->
-    <div class="w3-container w3-center" style="padding:96px 16px">
-      <img src="images/wanlingcai_2023.jpg" class="w3-round" alt="Wanling"  style="width:80%">
-      <br>
-      <div class="w3-container">
+    <div class="container-fluid text-center" style="padding:96px 16px">
+      <img src="images/wanlingcai_2023.jpg" class="rounded-circle img-fluid" alt="Wanling"  style="width:80%">
+      <br> 
+      <div class="container-fluid" style="padding:16px 0px; font-size:16px; line-height:1.4; ">
         Wanling Cai (蔡婉铃)
         <br>
         Ad Astra Fellow / Assistant Professor
@@ -106,16 +121,18 @@ body, html {
         <a href="https://www.ucd.ie/" target="_blank" itemprop="url" rel="noopener" style="text-decoration: none">University College Dublin, Ireland</a>
         <br>
       </div>
-      <div class="w3-container">
+      <div class="container-fluid" style="padding:8px 0px; font-size:30px; line-height:1.4; ">
         <a href="mailto:wanling.cai@ucd.ie" title="wanling.cai@ucd.ie"><i class="fa-solid fa-envelope"></i></a>
         &nbsp; &nbsp; 
         <a href="https://scholar.google.com/citations?hl=en&authuser=1&user=98F_PpsAAAAJ" title="Google Scholar"><i class="fa-brands fa-google"></i></a>
         &nbsp; &nbsp; 
         <a href="https://github.com/wanlingcai1997" title = "GitHub"><i class="fa-brands fa-github"></i></a>
         &nbsp; &nbsp;
+        <a href="https://www.linkedin.com/in/wanling-cai-4a33a0151/" title = "LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <!-- &nbsp; &nbsp; -->
         <!-- <a href="files/Wanling_Cai_CV.pdf" target="_blank" title="Curriculum Vitae" ><i class="fa-regular fa-file-lines"> cv</i></a> -->
-        <!-- &nbsp;  -->
-        <a href="https://twitter.com/wanling_cai" ><i class="fa fa-twitter"></i></a>
+        <!-- Twitter (No use now)-->
+        <!-- <a href="https://twitter.com/wanling_cai" ><i class="fa fa-twitter"></i></a> -->
         &nbsp; 
         <!-- <a href="xxx" ><i class="fa fa-address-card"></i></a> -->
       </div> 
@@ -146,52 +163,78 @@ body, html {
     </div>
   </div>
 
-
   <!-- Right (3/4) Sections -->
-  <div class="w3-col m8 l9" style="padding:96px 16px">
+  <div class="w3-col m8 l9" style="padding:96px 32px">
     <!-- Section: About -->
     <div class="cli" id="about"></div>
-    <div class="w3-container" style="padding:32px 32px"> 
-        <h4> &#128075; Welcome</h4>
-        <p style="padding:0px 32px">
-          I am a Human-Computer Interaction (HCI) researcher, currently a Ad Astra Fellow / Assistant Professor in Human-AI Collaboration with the School of Computer Science, 
+    <div class="container-fluid" style="padding:0px 32px"> 
+        <h3> &#128075; About Me</h3>
+        <p>
+          I am a Human-Computer Interaction (HCI) researcher, currently an Ad Astra Fellow / Assistant Professor in Human-AI Collaboration with the School of Computer Science, 
           University College Dublin (UCD). 
         </p>
-        <p style="padding:0px 32px">
-          Before joining UCD, I was a postdoctoral researcher in the Health Technology Design Group at the School of Computer Science and Statistics at Trinity College Dublin & Lero (supervised by <a href="https://www.scss.tcd.ie/Gavin.Doherty/" target="_blank" itemprop="url" rel="noopener" style="text-decoration: none">Prof. Gavin Doherty</a>). 
-          I received my Ph.D. in Computer Science (Human-Computer Interaction) from Hong Kong Baptist University in 2022, supervised by
-          <a href="https://www.comp.hkbu.edu.hk/~lichen/" target="_blank" itemprop="url" rel="noopener" style="text-decoration: none">Prof. Li Chen</a> and mentored by <a href="https://yucheng.gold/" target="_blank" itemprop="url" rel="noopener" style="text-decoration: none">Dr. Yucheng Jin</a>.
-          Prior to that, I received my B.Eng degree in Software Engineering from the College of Computer Science and Software Engineering  (advised by
-          <a href="http://csse.szu.edu.cn/staff/panwk/index.html" target="_blank" itemprop="url" rel="noopener" style="text-decoration: none">Prof. Weike Pan</a>) in Shenzhen University (SZU), China, in 2018. </p> 
-        </p>
-        <!-- Section: Research Interests -->
-        <!-- <h5> &#127775; Research Interests</h5> -->
-        <p style="padding:0px 32px">
-          My research work lies at the intersection of Human-Computer Interaction (HCI), Human-Centered Artificial Intelligence (HCAI), and Mental Health, 
-          where I seek to empower individuals to live a healthy and thriving live through the thoughtful and responsible design of AI. 
 
-          Toward this, my work adopts human-centered methods to explore, design, and evaluate interactive AI technologies 
-          (e.g., recommender systems, conversational systems, generative AI, and wearables) to support everday decision-making and mental health. 
-          My work is inherently interdisciplinary, informed by computer and information science, design, psychology, and cognitive science.
+        <p>
+         <b>Background: </b>
+          Before joining UCD, I was a postdoctoral researcher in the Health Technology Design Group at Trinity College Dublin &amp; Lero from 2023 to 2025.
+          I received my Ph.D. in Computer Science from Hong Kong Baptist University in 2022, and B.Eng in Software Engineering from Shenzhen University in 2018, respectively.
+          <!-- Before joining UCD, I was a postdoctoral researcher working with <a href="https://www.scss.tcd.ie/Gavin.Doherty/" target="_blank" itemprop="url" rel="noopener" style="text-decoration: none">Prof. Gavin Doherty</a> 
+          in the Health Technology Design Group at the School of Computer Science and Statistics at Trinity College Dublin &amp; Lero.
+          I received my Ph.D. in Computer Science from Hong Kong Baptist University in 2022, supervised by 
+          <a href="https://www.comp.hkbu.edu.hk/~lichen/" target="_blank" itemprop="url" rel="noopener" style="text-decoration: none">Prof. Li Chen</a> 
+          and mentored by <a href="https://yucheng.gold/" target="_blank" itemprop="url" rel="noopener" style="text-decoration: none">Dr. Yucheng Jin</a>.
+          Prior to that, I received my B.Eng degree in Software Engineering from the College of Computer Science and Software Engineering, 
+          advised by <a href="http://csse.szu.edu.cn/staff/panwk/index.html" target="_blank" itemprop="url" rel="noopener" style="text-decoration: none">Prof. Weike Pan</a>, 
+          in Shenzhen University in 2018. </p> -->
         </p>
-        <p style="padding:0px 32px">
-          Currently, my research in Human–AI interaction and collaboration broadly spans three interconnected areas:
-          <ul style="padding:0px 64px">
-            <li>Human-Centered AI for Mental Health</li>
-            <li>Conversational Human-AI Interaction</li>
-            <li>Responsible and Ethical AI Design </li>
-          </ul>
-      </p>
 
+        <div class="row align-items-center" style="padding:0px 0px; margin-top:0px; margin-bottom:16px;">
+            <p>
+              <b>Research Interests: </b>
+              My research lies at the intersection of human-computer interaction (HCI), artificial intelligence (AI), health and well-being, where I seek to support people in leading healthy, thriving lives through the thoughtful and responsible design of AI.
+              Towards this, my work mainly adopts human-centered methods to explore, design, and evaluate interactive AI technologies 
+              (e.g., recommender systems, conversational systems, generative AI, and wearables) to support everday decision-making and mental health contexts. 
+              My work is inherently interdisciplinary, informed by computer and information science, design, psychology, and cognitive science.
+
+              My previous research projects have spanned the three interconnected areas below:
+            </p>
+              
+            <div class="col-md-8">
+            <ul style="padding:0px 64px; margin-bottom:0;">
+              <li>Human-AI Interaction and Collaboration
+                <ul>
+                  <li>Conversational AI for Recommendations: <a href="#C3"> [UMAP'20-User Intents], <a href="#C4"> [IUI'21-Exploration], <a href="#C6"> [CHI'22-User Trust],<a href="#J3"> [CSUR'22-Survey]</a> </a></li>
+                  <li>Human-Centered Explainable AI: <a href="#J10"> [TOCHI'25-Scoping Review]</a></li>
+                  <li>Generative AI for Wellbeing: <a href="#C8"> [CHI'24-Reminiscence], <a href="#C9"> [CHI EA'25-Collage]</a>  </li>
+                </ul>
+              </li>
+              <li>Technology for Mental Health and Wellbeing
+                <ul>
+                  <li>Conversational Agents for Mental Wellbeing: <a href="#C7"> [CHI'23-Self-Awareness]</a>, <a href="#J8"> [IJHCS'24-Survey Chatbots]</a> </li>
+                  <li>Online Communities for Youth Mental Health:  <a href="#J6"> [CSCW'23-Social Support]</a> </li>
+                </ul>
+              </li>
+              <li>Responsible and Ethical Design
+                <ul>
+                  <li>Human-Centric Security and Privacy: <a href="#J11"> [C&S'25-Smart Homes]</a> </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-4 text-center">
+            <img src="images/research_interest_2024_simple.png" alt="Research interests" class="img-fluid rounded" style="max-height:300px; width:auto;">
+          </div>
+        </div>
         
-        <!-- <p style="padding:0px 32px"> During my PhD, my research focused on the intersection of Human-Computer Interaction (HCI) and Recommender Systems (RS). I designed and evaluated conversational recommender systems from a human perspective to better enhance user experience and inspire user trust. </p>  -->
-      <div class="w3-center">
-        <img src="images/research_interest_2024_simple.png" alt="research interest" style="width:40%">
-      
-      <div style="color: rgba(142, 8, 8, 0.934); padding:12px; border-left: 5px solid #af4c4c; background: #fffcf1; border-radius: 4px; margin: 12px 0;" >
-        I’m currently looking for PhD students to work with me at UCD and start the Human-AI research group. If you’re interested in these topics, please feel free to reach out by email.
-      </div>
-      </div>
+        <div class="alert alert-warning" role="alert"> 
+          <strong><i class="fa-solid fa-bullhorn" style="color:#f29421; margin-right:8px;" aria-hidden="true"></i>Propspective Students</strong>&nbsp;
+          I’m looking for self-motivated PhD students to join my group to design better human-centered AI systems that support mental health and well-being. If you are interested, please reach out via email with your CV and a brief note on your research interests.
+        </div>
+
+          
+
+
         <!-- <ul>
         <li>Human-centered AI</li>
         <li>Conversational Agents</li> 
@@ -204,7 +247,7 @@ body, html {
 
 
     <!-- <div class="w3-container" style="padding:32px 32px">
-      <h4> Recent News </h5>
+      <h3> Recent News </h5>
         <ul>
           <li>
             <i class="fa fa-calendar" aria-hidden="true"></i> 2022/02/10: Our paper "Impacts of Personal Characteristics on User Trust in Conversational Recommender Systems" is conditionally accepted by CHI 2022. Thanks to Dr. Yucheng Jin and Dr. Li Chen!
@@ -214,7 +257,7 @@ body, html {
     
     <!-- Section: Education -->
     <!-- <div class="w3-container" style="padding:8px 32px"> 
-      <h4>Education</h4>
+      <h3>Education</h3>
       <ul>
         <li>September 2018 - Present, Ph.D. Student, Department of Computer Science, HKBU, Hong Kong, P.R. China. </li>
         <li>October 2014 - June 2018, B.Eng. (Hons) in Software Engineering at College of Computer Science and Software Engineering, SZU, Shenzhen, P.R. China.</li>
@@ -226,204 +269,243 @@ body, html {
     <!-- revision: modify to table format -->
     <div class="cli" id="publications"></div>
     <div class="w3-container" style="padding:32px 32px">
-      <h4>Selected Publications</h4>
-        <!-- <h5><u>Journals</u></h5> -->
-        <p><sup>&#9841</sup> indicates equal contributions </p>
-        <h6> Journal </h6>
-        <ol>
-          <li>
-            <strong><u>Wanling Cai</u></strong>, Liliana Pasquale, Kushal Ramkumar, John McCarthy, Bashar Nuseibeh, and Gavin Doherty.
-            <b>Human-Centric Security for Smart Homes: A Scoping Review</b>
-            <i>Computers & Security</i>, 2025. (Just Accepted)
+        <style>
+        .ref-label{
+          text-decoration:none;
+          color:#F29F05;
+          margin-right:8px;
+        }
+        ol.journal-list, ol.conference-list { padding-left:0; }
+        ol.journal-list li, ol.conference-list li { margin-bottom:12px; list-style:none; }
+        </style>
+
+      <h3>Selected Publications</h3>
+
+        <!--
+        Symbol: &#9841; — simple marker indicating equal contributions (used as a superscript next to author names)
+        -->
+        <p> &ast; indicates equal contributions </p>
+        <h5> Journal Articles </h5>
+        <ol class="journal-list">
+            <li id="J11">
+            <u>Wanling Cai</u>, Liliana Pasquale, Kushal Ramkumar, John McCarthy, Bashar Nuseibeh, and Gavin Doherty.
+            <b>Human-Centric Security for Smart Homes: A Scoping Review.</b>
+            <i>Computers & Security</i>, 2025. 
             <br>
-            [<a href="https://doi.org/10.1016/j.cose.2025.104762" target="_blank">Publisher</a>]
-          </li>
-          <li>
-            Karina Cortiñas Lorenzo, <strong><u>Wanling Cai</u></strong> and Gavin Doherty. 
-            <b>Designing, Implementing and Evaluating AI Explanations: a Scoping Review of Explainable AI Frameworks</b>
-            <i>ACM Transactions on Computer-Human Interaction</i>, Volume 32 Issue 6, 2025.
+            [<a href="https://doi.org/10.1016/j.cose.2025.104762" target="_blank" style="text-decoration: none;">Publisher</a>]
+            </li>
+            <li id="J10">
+            Karina Cortiñas Lorenzo, <u>Wanling Cai</u> and Gavin Doherty. 
+            <b>Designing, Implementing and Evaluating AI Explanations: a Scoping Review of Explainable AI Frameworks.</b>
+            <i>ACM Transactions on Computer-Human Interaction (TOCHI)</i>, Volume 32, Issue 6, 2025.
             <br>
-            [<a href="https://dl.acm.org/doi/10.1145/3769678" target="_blank">Publisher</a>]
-          </li>
-          <li>
-            Yucheng Jin, Li Chen, <strong><u>Wanling Cai</u></strong> and Xianglin Zhao. 
+            [<a href="https://dl.acm.org/doi/10.1145/3769678" target="_blank" style="text-decoration: none;">Publisher</a>]
+            </li>
+            <li id="J9">
+            Seamus Ryan, <u>Wanling Cai</u>, Robert Bowman, and Gavin Doherty. 
+            <b>Fairness Challenges in the Design of Machine Learning Applications for Healthcare.</b>
+            <i>ACM Transactions on Computing for Healthcare</i>, Volume 6, Issue 4, 2025.
+            <br>
+            [<a href="https://dl.acm.org/doi/full/10.1145/3728368" target="_blank" style="text-decoration: none;">Publisher</a>]
+            </li>
+            <li id="J8">
+            Yucheng Jin, Li Chen, Xianglin Zhao, and <u>Wanling Cai</u>.
+            <b>The Way You Assess Matters: User Interaction Design of Survey Chatbots for Mental Health.</b>
+            <i>International Journal of Human-Computer Studies (IJHCS)</i>, Volume 189, 2024.
+            <br>
+            [<a href="https://www.sciencedirect.com/science/article/abs/pii/S1071581924000740" target="_blank" style="text-decoration: none;">Publisher</a>]
+            </li>
+            <li id="J7">
+            Yucheng Jin, Li Chen, <u>Wanling Cai</u> and Xianglin Zhao. 
             <b>CRS-Que: A User-Centric Evaluation Framework for Conversational Recommender Systems.</b>
             <i>ACM Transactions on Recommender Systems</i>, Volume 2, Issue 1, 2024.
             <br>
-            [<a href="https://dl.acm.org/doi/full/10.1145/3631534" target="_blank">Publisher</a>]
-          </li>
-          <li>
-            Yucheng Jin&ast;, <strong><u>Wanling Cai</u></strong>&ast;, Li Chen, Yuwan Dai, and Tonglin Jiang.
+            [<a href="https://dl.acm.org/doi/full/10.1145/3631534" target="_blank" style="text-decoration: none;">Publisher</a>]
+            </li>
+            <li id="J6">
+            Yucheng Jin&ast;, <u>Wanling Cai</u>&ast;, Li Chen, Yuwan Dai, and Tonglin Jiang.
             <b>Understanding Disclosure and Support for Youth Mental Health in Social Music Communities.</b>
             In: <i>Proceedings of the ACM on Human-Computer Interaction (CSCW)</i>, Volume 7, Issue CSCW1, April 2023. 
             <br>
-            <!-- [<a href="files/2023/CHI2023-Paper.pdf" target="_blank">Paper</a>] -->
-            <!-- [<a href="files/2022/CHI2022-Slides.pdf" target="_blank">Slides</a>] -->
-            [<a href="files/2023/CSCW23-Paper.pdf" target="_blank">Paper</a>]
-          </li>
-          <li>
-            Li Chen, <strong><u>Wanling Cai</u></strong>, Dongning Yan, and Shlomo Berkovsky.
+            [<a href="files/2023/CSCW23-Paper.pdf" target="_blank" style="text-decoration: none;">Paper</a>]
+            </li>
+            <li id="J5">
+            Li Chen, <u>Wanling Cai</u>, Dongning Yan, and Shlomo Berkovsky.
             <b>Eye-tracking-based Personality Prediction with Recommendation Interfaces.</b>
             <i>User Modeling and User-Adapted Interaction (UMUAI)</i>, June 2022.
             <br>
-            [<a href="https://link.springer.com/article/10.1007/s11257-022-09336-9" target="_blank">Publisher</a>]
-          </li>
-          <li>
-            <strong><u>Wanling Cai</u></strong>, Yucheng Jin, and Li Chen.
+            [<a href="https://link.springer.com/article/10.1007/s11257-022-09336-9" target="_blank" style="text-decoration: none;">Publisher</a>]
+            </li>
+            <li id="J4">
+            <u>Wanling Cai</u>, Yucheng Jin, and Li Chen.
             <b>Task-Oriented User Evaluation on Critiquing-Based Recommendation Chatbots.</b>
             <i>IEEE Transactions on Human-Machine Systems </i>, Volume: 52, Issue: 3, June 2022.
             <br>
-            [<a href="https://ieeexplore.ieee.org/document/9674819" target="_blank">Publisher</a>]
-          </li>
-          <li>
-            Jannach, Dietmar, Ahtsham Manzoor, <strong><u>Wanling Cai</u></strong>, and Li Chen.
+            [<a href="https://ieeexplore.ieee.org/document/9674819" target="_blank" style="text-decoration: none;">Publisher</a>]
+            </li>
+            <li id="J3">
+            Jannach, Dietmar, Ahtsham Manzoor, <u>Wanling Cai</u>, and Li Chen.
             <b>A Survey on Conversational Recommender Systems.</b>
-            <i>ACM Computing Surveys</i>, Volume 54, Issue 5, Article No. 105, pages 1-36, 2021. 
+            <i>ACM Computing Surveys (CSUR)</i>, Volume 54, Issue 5, Article No. 105, pages 1-36, 2021. 
             <br>
-            [<a href="https://dl.acm.org/doi/abs/10.1145/3453154" target="_blank">Publisher</a>]
-          </li>
-          <li>
-            <strong><u>Wanling Cai</u></strong>, Jiongbin Zheng, Weike Pan, Jing Lin, Lin Li, Li Chen, Xiaogang Peng, and Zhong Ming.
+            [<a href="https://dl.acm.org/doi/abs/10.1145/3453154" target="_blank" style="text-decoration: none;">Publisher</a>]
+            </li>
+            <li id="J2">
+            <u>Wanling Cai</u>, Jiongbin Zheng, Weike Pan, Jing Lin, Lin Li, Li Chen, Xiaogang Peng, and Zhong Ming.
             <b>Neighborhood-Enhanced Transfer Learning for One-Class Collaborative Filtering.</b>
             <i>Neurocomputing</i> (0925-2312), vol. 341, pages 80-87, 2019.
             <br>
-            [<a href="https://doi.org/10.1016/j.neucom.2019.03.016" target="_blank">Paper</a>]
+            [<a href="https://doi.org/10.1016/j.neucom.2019.03.016" target="_blank" style="text-decoration: none;">Paper</a>]
             <br>
-          </li>
-          <li>
-            Weike Pan, Qiang Yang, <strong><u>Wanling Cai</u></strong>, Yaofeng Chen, Qing Zhang, Xiaogang Peng and Zhong Ming. 
+            </li>
+            <li id="J1">
+            Weike Pan, Qiang Yang, <u>Wanling Cai</u>, Yaofeng Chen, Qing Zhang, Xiaogang Peng and Zhong Ming. 
             <b>Transfer to Rank for Heterogeneous One-Class Collaborative Filtering.</b>
             <i>ACM Transactions on Information Systems (TOIS)</i> (1046-8188), 37(1):10:1-10:20, January 2019.
             <br>
-            [<a href="https://doi.org/10.1145/3243652" target="_blank">Publisher</a>]
+            [<a href="https://doi.org/10.1145/3243652" target="_blank" style="text-decoration: none;">Publisher</a>]
             <br>
-          </li>
+            </li>
         </ol>
-
-        <h6> Conference </h6>
-        <ol>
-          <li>
-            Yucheng Jin&ast;, <strong><u>Wanling Cai</u></strong>&ast;, Li Chen, Yizhe Zhang, Gavin Doherty, and Tonglin Jiang. 
-            <b>Exploring the Design of Generative AI in Supporting Music-based Reminiscence for Older Adults.</b>
-            In: <i>Proceedings of the 42nd ACM Conference on Human Factors in Computing Systems (CHI’24)</i>, Honolulu, Hawaii, USA, May 11-16, 2024. (to appear)
+        <br>
+        <h5> Conference Papers</h5>
+        <ol class="conference-list">
+          <li id="C9">
+            Yalong Luo, Leyan Wu, Yirui Huang, <u>Wanling Cai</u>, and Yucheng Jin. 
+            <b>Exploring the Impacts of AI Technologies on Digital Collage Creation.</b>
+            In: <i>Proceedings of the Extended Abstracts of the CHI Conference on Human Factors in Computing Systems (CHI EA '25)</i>, Yokohama, Japan, April 26 - May 1, 2025.
             <br>
-            <!-- [<a href="files/2023/CHI2023-Paper.pdf" target="_blank">Paper</a>] -->
-            <!-- [<a href="files/2022/CHI2022-Slides.pdf" target="_blank">Slides</a>] -->
-            [<a href="https://arxiv.org/abs/2403.01413" target="_blank">Paper</a>]
+            [<a href="https://dl.acm.org/doi/10.1145/3706599.3719860" target="_blank" style="text-decoration: none;">Publisher</a>]
           </li>
-          <li>
-            <strong><u>Wanling Cai</u></strong>&ast;, Yucheng Jin&ast;, Xianglin Zhao, and Li Chen.
+          <li id="C8">
+            Yucheng Jin&ast;, <u>Wanling Cai</u>&ast;, Li Chen, Yizhe Zhang, Gavin Doherty, and Tonglin Jiang. 
+            <b>Exploring the Design of Generative AI in Supporting Music-based Reminiscence for Older Adults.</b>
+            In: <i>Proceedings of the 42nd ACM Conference on Human Factors in Computing Systems (CHI’24)</i>, Honolulu, Hawaii, USA, May 11-16, 2024. 
+            <br>
+            [<a href="https://dl.acm.org/doi/10.1145/3613904.3642800" target="_blank" style="text-decoration: none;">Publisher</a>]
+          </li>
+          <li id="C7">
+            <u>Wanling Cai</u>&ast;, Yucheng Jin&ast;, Xianglin Zhao, and Li Chen.
             <b>“Listen to Music, Listen to Yourself”: Design of a Conversational Agent to Support Self-Awareness While Listening to Music.</b>
             In: <i>Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems (CHI' 23)</i>, Hamburg, Germany, April 23-28, 2023. 
             <br>
-            [<a href="files/2023/CHI2023-Paper.pdf" target="_blank">Paper</a>]
-            <!-- [<a href="files/2022/CHI2022-Slides.pdf" target="_blank">Slides</a>] -->
-            [<a href="https://www.youtube.com/watch?v=5stI39gsTCY" target="_blank">Video</a>]
+            [<a href="files/2023/CHI2023-Paper.pdf" target="_blank" style="text-decoration: none;">Paper</a>]
+            [<a href="https://www.youtube.com/watch?v=5stI39gsTCY" target="_blank" style="text-decoration: none;">Video</a>]
           </li>
-          <li>
-            <strong><u>Wanling Cai</u></strong>, Yucheng Jin, and Li Chen.
+          <li id="C6">
+            <u>Wanling Cai</u>, Yucheng Jin, and Li Chen.
             <b>Impacts of Personal Characteristics on User Trust in Conversational Recommender Systems.</b>
-            In: <i>Proceedings of the 2022 CHI Conference on Human Factors in Computing Systems (CHI' 22)</i>, New Orleans, LA, April 30-May 5, 2022. <span style="color:red">[Honourable Mention Award]</span>
+            In: <i>Proceedings of the 2022 CHI Conference on Human Factors in Computing Systems (CHI'22)</i>, New Orleans, LA, April 30–May 5, 2022. 
             <br>
-            [<a href="files/2022/CHI2022-Paper.pdf" target="_blank">Paper</a>]
-            [<a href="files/2022/CHI2022-Slides.pdf" target="_blank">Slides</a>]
-            [<a href="https://www.youtube.com/watch?v=5stI39gsTCY" target="_blank">Video</a>]
+            <span class="badge bg-warning text-dark" title="Honourable Mention"> &#127942; Honourable Mention</span>
+            [<a href="files/2022/CHI2022-Paper.pdf" target="_blank" style="text-decoration: none;">Paper</a>]
+            [<a href="files/2022/CHI2022-Slides.pdf" target="_blank" style="text-decoration: none;">Slides</a>]
+            [<a href="https://www.youtube.com/watch?v=5stI39gsTCY" target="_blank" style="text-decoration: none;">Video</a>]
           </li>
-          <li>
-            Yucheng Jin, Li Chen, <strong><u>Wanling Cai</u></strong> and Pearl Pu.
+          <li id="C5">
+            Yucheng Jin, Li Chen, <u>Wanling Cai</u> and Pearl Pu.
             <b>Key Qualities of Conversational Recommender Systems: From Users’ Perspective.</b>
             In: <i>Proceedings of the 9th International Conference on Human-Agent Interaction (HAI' 21)</i>, Virtual Event Japan, November 9-11, 2021.
             <br>
-            [<a href="https://dl.acm.org/doi/abs/10.1145/3472307.3484164" target="_blank">Publisher</a>]
+            [<a href="https://dl.acm.org/doi/abs/10.1145/3472307.3484164" target="_blank" style="text-decoration: none;">Publisher</a>]
           </li>
-          <li>
-            <strong><u>Wanling Cai</u></strong>, Yucheng Jin, and Li Chen.
+          <li id="C4">
+            <u>Wanling Cai</u>, Yucheng Jin, and Li Chen.
             <b>Critiquing for Music Exploration in Conversational Recommender Systems.</b>
             In: <i>Proceedings of 26th International Conference on Intelligent User Interfaces (IUI' 21)</i>, College Station, TX, USA, April 14–17, 2021.
             <br>
-            [<a href="files/2021/IUI2021-Paper.pdf" target="_blank">Paper</a>]
-            [<a href="files/2021/IUI2021-Slides.pdf" target="_blank">Slides</a>]
-            [<a href="https://www.youtube.com/watch?v=xJplJUquAiM" target="_blank">Video</a>]
+            [<a href="files/2021/IUI2021-Paper.pdf" target="_blank" style="text-decoration: none;">Paper</a>]
+            [<a href="files/2021/IUI2021-Slides.pdf" target="_blank" style="text-decoration: none;">Slides</a>]
+            [<a href="https://www.youtube.com/watch?v=xJplJUquAiM" target="_blank" style="text-decoration: none;">Video</a>]
           </li>
-          <li>
-            <strong><u>Wanling Cai</u></strong> and Li Chen. 
+          <li id="C3">
+            <u>Wanling Cai</u> and Li Chen. 
             <b>Predicting User Intents and Satisfaction with Dialogue-based Conversational Recommendations.</b>
-            In: <i>Proceedings of 28th ACM Conference on User Modeling, Adaptation and Personalization (UMAP' 20)</i>, Genoa, Italy, July 14-17, 2020. <span style="color:red">[Best Student Paper Award]</span>
+            In: <i>Proceedings of 28th ACM Conference on User Modeling, Adaptation and Personalization (UMAP' 20)</i>, Genoa, Italy, July 14-17, 2020.
             <br>
+            <span class="badge bg-warning text-dark" title="Best Student Paper Award"> &#127942; Best Student Paper Award</span>
             [<a href="files/2020/UMAP2020-Paper.pdf" target="_blank">Paper</a>]
-            [<a href="files/2020/UMAP2020-Slides.pdf" target="_blank">Slides</a>]
-            [<a href="https://www.youtube.com/watch?v=257wyBWabBQ" target="_blank">Video</a>]
-            [<a href="files/2020/UMAP2020_dataset_readme.html" target="_blank">Dataset</a>]
-            [<a href="https://github.com/wanlingcai1997/umap_2020_code" target="_blank"> Code</a>]
+            [<a href="files/2020/UMAP2020-Slides.pdf" target="_blank" style="text-decoration: none;">Slides</a>]
+            [<a href="https://www.youtube.com/watch?v=257wyBWabBQ" target="_blank" style="text-decoration: none;">Video</a>]
+            [<a href="files/2020/UMAP2020_dataset_readme.html" target="_blank" style="text-decoration: none;">Dataset</a>]
+            [<a href="https://github.com/wanlingcai1997/umap_2020_code" target="_blank" style="text-decoration: none;">Code</a>]
             <br>
           </li>
-          <li>
-            Yucheng Jin, <strong><u>Wanling Cai</u></strong>, Li Chen, Nyi Nyi Htun, and Katrien Verbert. 
+          <li id="C2">
+            Yucheng Jin, <u>Wanling Cai</u>, Li Chen, Nyi Nyi Htun, and Katrien Verbert. 
             <b>MusicBot: Evaluating Critiquing-based Music Recommenders with Conversational Interaction.</b>
             In: <i> Proceedings of 28th ACM International Conference on Information and Knowledge Management (CIKM' 19)</i>, Beijing, China, November 3-7, 2019. 
-            <!-- (Acceptance rate: 19.4%) -->
             <br>
-            [<a href="files/2019/CIKM2019-MusicBot-Paper.pdf" target="_blank">Paper</a>]
-            [<a href="files/2019/CIKM2019-MusicBot-Slides.pdf" target="_blank">Slides</a>]
-            [<a href="files/2019/CIKM2019-MusicBot-Poster.pdf" target="_blank">Poster</a>]
+            [<a href="files/2019/CIKM2019-MusicBot-Paper.pdf" target="_blank" style="text-decoration: none;">Paper</a>]
+            [<a href="files/2019/CIKM2019-MusicBot-Slides.pdf" target="_blank" style="text-decoration: none;">Slides</a>]
+            [<a href="files/2019/CIKM2019-MusicBot-Poster.pdf" target="_blank" style="text-decoration: none;">Poster</a>]
             <br>
           </li>
-          <li>
-            <strong><u>Wanling Cai</u></strong> and Li Chen. 
+          <li id="C1">
+            <u>Wanling Cai</u> and Li Chen. 
             <b>Towards a Taxonomy of User Feedback Intents for Conversational Recommendations.</b>
             In: <i>Proceedings of 13th ACM Conference on Recommender Systems (RecSys' 19), Late-Breaking Results</i>, Copenhagen, Denmark, September 16-20, 2019.
             <br>
-            [<a href="files/2019/Recsys2019-LBR-Paper.pdf" target="_blank">Paper</a>]
-            [<a href="files/2019/Recsys2019-LBR-Poster.pdf" target="_blank">Poster</a>]
+            [<a href="files/2019/Recsys2019-LBR-Paper.pdf" target="_blank" style="text-decoration: none;">Paper</a>]
+            [<a href="files/2019/Recsys2019-LBR-Poster.pdf" target="_blank" style="text-decoration: none;">Poster</a>]
             <br>
           </li>
         </ol>
-
-        <h6>Posters & Workshop Papers</h6>
-        <ol reversed>
-          <li>
-            <strong><u>Wanling Cai</u></strong>, Liliana Pasquale, Kushal Ramkumar, John McCarthy, Bashar Nuseibeh and Gavin Doherty. 
-            <b>Human-AI Collaboration for Sustainable Security: Opportunities and Challenges</b> (Poster). 
-            In: <i>The Nineteenth Symposium on Usable Privacy and Security (SOUPS '23)</i>, Anaheim, CA, United States, August 6-8, 2023.
-            <br>
-            [<a href="https://www.usenix.org/conference/soups2023/presentation/cai-poster" target="_blank">Open Access</a>]
-            <br>
-          </li>
-          <li> 
-            Ahtsham Manzoor, <strong><u>Wanling Cai</u></strong> and Dietmar Jannach. 
-            <b>Factors Influencing the Perceived Meaningfulness of System Responses in Conversational Recommendation.</b>
-            In: <i>IntRS'23: Joint Workshop on Interfaces and Human Decision Making for Recommender Systems (RecSys '23)</i>, Singapore (hybrid event), September 18, 2023.
-          </li>
-          <li>
-            Jixiong Liu, Jiakun Shi, <strong><u>Wanling Cai</u></strong>, Bo Liu, Weike Pan, Qiang Yang and Zhong Ming. 
-            <b>Transfer Learning from APP Domain to News Domain for Dual Cold-Start Recommendation.</b>
-            In: <i> Proceedings of the 1st Workshop on Intelligent Recommender Systems by Knowledge Transfer & Learning (RecSysKTL 2017) co-located with the 11th ACM Conference on Recommender Systems (RecSys' 17)</i>, Como, Italy, August 27-31, 2017.
-            <br>
-            [<a href="http://ceur-ws.org/Vol-1887/paper6.pdf" target="_blank">Short Paper</a>]
-            [<a href="https://youtu.be/fIL5DSVSNc0" target="_blank">Video</a>]
-            <br>
-          </li>
-        </ol>
+    </div>
+    <!-- Section: Teaching -->
+    <div class="cli" id="teaching"></div>
+    <div class="w3-container" style="padding:32px 32px"> 
       
+      <h3>Teaching</h3>
+      <br>
+      <h5>2025-2026 Spring Trimester</h5>
+      <ul>
+        <li>COMP 47670 Data Science in Python (MD)
+        </li>
+      </ul>
+      <h5>2018-2022 Teaching Assistant at Hong Kong Baptist University</h5>
+      <ul>
+        <li>COMP 4135/7240 Recommender Systems and Applications / Recommender Systems
+          <!-- <br> 2021-2022 S2, <span class='light-bold'><i>Excellent Teaching Assistant Performance Award</i></span> -->
+        <li>COMP 4136 Natural Language Processing
+          <!-- <br> 2021-2022 S1, <span class='light-bold'><i>Excellent Teaching Assistant Performance Award</i></span> -->
+        <li>COMP 1006 Facets of Computing
+          <!-- <br> 2021-2022 S1, <span class='light-bold'><i>Excellent Teaching Assistant Performance Award</i></span> -->
+        <li>COMP 3925 Data Analysis Studio
+          <!-- <br> 2019-2020 S2, <span class='light-bold'><i>Excellent Teaching Assistant Performance Award</i></span> -->
+          <!-- <br> 2020-2021 S2, <span class='light-bold'><i>Teaching Assistant Performance Award</i></span> -->
+        </li>
+        <li>COMP 2865 Fundamental of Data Analysis and Management
+          <!-- <br> 2019-2020 S1, <span class='light-bold'><i>Teaching Assistant Performance Award</i></span> -->
+          <!-- <br> 2020-2021 S1, <span class='light-bold'><i>Excellent Teaching Assistant Performance Award</i></span> -->
+        </li> 
+        <li> COMP 4015/7015 Artificial Intelligence and Machine Learning
+          <!-- <br>2018-2019 S2, <span class='light-bold'><i>Excellent Teaching Assistant Performance Award</i></span> -->
+        </li>
     </div>
     
     <div class="cli" id="services"></div>
     <!-- Section: Professional  Services -->
     <div class="w3-container" style="padding:32px 32px"> 
-      <h4>Professional  Services</h4>
-      Conference Organization
+      <h3>Services</h3>
+      <br>
+
+      <h5>Conference Organization</h5>
       <ul>
+        <li>Web Co-Chair of The 34th ACM Conference on User Modeling, Adaptation and Personalization (UMAP '26)</li>
         <li>Publicity Co-Chair of The 32nd ACM Conference on User Modeling, Adaptation and Personalization (UMAP '24)</li>
         <li>Publicity Co-Chair of The 29th Annual Conference on Intelligent User Interfaces (IUI '24)</li>
         <li>Inclusion and Accessibility Co-Chair of The 17th ACM Conference on Recommender Systems (RecSys '23)</li>
         <li>Proceedings Co-Chair of The 31st ACM Conference on User Modeling, Adaptation and Personalization (UMAP '23)</li>
         <li>Publicity Co-Chair of The 20th International Conference on Mobile and Ubiquitous Multimedia (MUM '21)</li>
       </ul>
-      Program Committee Member
+      <h5>Program Committee Member</h5>
       <ul>
+        <li>2026 31st ACM Conference on Intelligent User Interfaces (IUI '26) Regular papers (Senior PC) </li>
+        <li>2026 ACM Conference on Human Factors in Computing Systems (CHI '26) Associate Chairs in Health Subcommittee</li>
         <li>2025 30th ACM Conference on Intelligent User Interfaces (IUI '25) Regular papers </li>
         <li>2025 ACM Conference on Human Factors in Computing Systems (CHI '25) Associate Chairs in Health Subcommittee</li>
-        <li>2024 ACM Conference on Human Factors in Computing Systems (CHI '24) Late-Breaking Work</li>
+        <li>2024 ACM Conference on Human Factors in Computing Systems (CHI '24) Associate Chairs in Late-Breaking Work</li>
         <li>2024 29th ACM Conference on Intelligent User Interfaces (IUI '24) Regular papers </li>
         <li>2024 33rd ACM Web Conference (WWW '24) Research Paper Track on User Modeling and Personalization </li>
         <li>2023 31st ACM Conference on User Modeling, Adaptation and Personalization (UMAP '23) Regular papers </li>
@@ -432,7 +514,7 @@ body, html {
         <li>2022 21st International Conference on Mobile and Ubiquitous Multimedia (MUM '22) Long and short papers</li>
         <li>2021 20th International Conference on Mobile and Ubiquitous Multimedia (MUM '21) Long and short papers & Posters</li>
       </ul>
-      Invited Reviewer
+      <h5>Invited Reviewer</h5>
       <ul>
         <li>ACM Conference on Human Factors in Computing Systems (CHI '23 & CHI '24) <strong>[Special Recognitions for Outstanding Reviews]</strong></li> </li>
         <li>International Journal of Human-Computer Studies (IJHCS), 2024</li>
@@ -446,53 +528,32 @@ body, html {
         <li>Knowledge-Based Systems (KBS), 2018 & 2020 & 2021</li>
         <li>Sub-Reviewer, The Web Conference (WWW), 2019</li>
       </ul>
-      Talks/Conference Presentations
+      <h5>Talks / Guest Lectures</h5>
       <ul>
         <li>"Conversational Recommender Systems and Recent Trends Driven by LLMs" (with Prof. Li Chen and Dr. Lei Li), ACM Europe School on Recommender Systems 2024, October 10, 2024. </li>
         <li>"A Brief Introduction of Artificial Intelligence", UCD Innovation Academy - Design a Digital Future, University College Dublin, Dublin, Ireland, September 26, 2024. </li>
-        <li>"Human-AI Collaboration for Sustainable Security: Opportunities and Challenges", SOUPS 2023 Poster Presentation.</li>
-        <li>"Listen to Music, Listen to Yourself: Design of a Conversational Agent to Support Self-Awareness While Listening to Music.", CHI 2023 Conference Presentation.</li>
-        <li>"Impacts of Personal Characteristics on User Trust in Conversational Recommender Systems.", CHI 2022 Conference Presentation.</li>
+        <!-- <li>"Human-AI Collaboration for Sustainable Security: Opportunities and Challenges", SOUPS 2023 Poster Presentation.</li> -->
+        <!-- <li>"Listen to Music, Listen to Yourself: Design of a Conversational Agent to Support Self-Awareness While Listening to Music.", CHI 2023 Conference Presentation.</li> -->
+        <!-- <li>"Impacts of Personal Characteristics on User Trust in Conversational Recommender Systems.", CHI 2022 Conference Presentation.</li> -->
         <li>"Personal Experience in Academic Writing and Presentation", Department of Computer Science, Hong Kong Baptist University, Hong Kong, P.R. China, November 02, 2021. </li>
         <li>"Design and Evaluation of Conversational Agents", Department of Journalism, Hong Kong Baptist University, Hong Kong, P.R. China, April 21, 2021.</li>
-        <li>"Critiquing for Music Exploration in Conversational Recommender Systems", IUI 2021 Conference Presentation (Virtual).</li>
-        <li>"Predicting User Intents and Satisfaction with Dialogue-based Conversational Recommendations", UMAP 2020 Conference Presentation (Virtual).</li>
-        <li>"Conversational Agents: Introduction, Design and Evaluation", Department of Journalism, Hong Kong Baptist University, Hong Kong, P.R. China, April 2, 2020.</li>
-        <li>"MusicBot: Evaluating Critiquing-based MusicRecommenders with Conversational Interaction", CIKM 2019 Conference Presentation, Beijing, China, November 3-7, 2019.</li>
+        <!-- <li>"Critiquing for Music Exploration in Conversational Recommender Systems", IUI 2021 Conference Presentation (Virtual).</li> -->
+        <!-- <li>"Predicting User Intents and Satisfaction with Dialogue-based Conversational Recommendations", UMAP 2020 Conference Presentation (Virtual).</li> -->
+        <!-- <li>"Conversational Agents: Introduction, Design and Evaluation", Department of Journalism, Hong Kong Baptist University, Hong Kong, P.R. China, April 2, 2020.</li> -->
+        <!-- <li>"MusicBot: Evaluating Critiquing-based MusicRecommenders with Conversational Interaction", CIKM 2019 Conference Presentation, Beijing, China, November 3-7, 2019.</li> -->
       </ul>
-      Book Review
+      <h5>Book Review</h5>
       <ul>
         <li>Review of book chapter translation: Marco de Gemmis, Pasquale Lops, Cataldo Musto, Fedelucio Narducci, and GiovanniSemeraro. Semantics-Aware Content-Based Recommender Systems.Chapter 4 of Recommender Systems Handbook (Second Edition), Springer, 2015. </li>
         <li>Review of book chapter translation: Gediminas Adomavicius and YoungOk Kwon. Multi-Criteria Recommender Systems. Chapter 25 of Recommender Systems Handbook (Second Edition), Springer, 2015.</li>
       </ul>
     </div>
-    <!-- Section: Teaching -->
-    <div class="cli" id="teaching-assistant"></div>
-    <div class="w3-container" style="padding:32px 32px"> 
-      <h4>Teaching Assistant</h4>
-      <ul>
-        <li>COMP 4135/7240 Recommender Systems and Applications / Recommender Systems
-          <br> 2021-2022 S2, <span class='light-bold'><i>Excellent Teaching Assistant Performance Award</i></span>
-        <li>COMP 4136 Natural Language Processing
-          <br> 2021-2022 S1, <span class='light-bold'><i>Excellent Teaching Assistant Performance Award</i></span>
-        <li>COMP 1006 Facets of Computing
-          <br> 2021-2022 S1, <span class='light-bold'><i>Excellent Teaching Assistant Performance Award</i></span>
-        <li>COMP 3925 Data Analysis Studio
-          <br> 2019-2020 S2, <span class='light-bold'><i>Excellent Teaching Assistant Performance Award</i></span>
-          <br> 2020-2021 S2, <span class='light-bold'><i>Teaching Assistant Performance Award</i></span>
-        </li>
-        <li>COMP 2865 Fundamental of Data Analysis and Management
-          <br> 2019-2020 S1, <span class='light-bold'><i>Teaching Assistant Performance Award</i></span>
-          <br> 2020-2021 S1, <span class='light-bold'><i>Excellent Teaching Assistant Performance Award</i></span>
-        </li> 
-        <li> COMP 4015/7015 Artificial Intelligence and Machine Learning
-          <br>2018-2019 S2, <span class='light-bold'><i>Excellent Teaching Assistant Performance Award</i></span>
-        </li>
-    </div>
+    
+
     <!-- Section: Awards -->
-    <div class="cli" id="awards"></div>
+    <!-- <div class="cli" id="awards"></div>
     <div class="w3-container" style="padding:32px 32px">
-      <h4>Awards</h4>
+      <h3>Selected Awards</h3>
       <ul>
         <li> 2022, Madam Kwok Chung Bo Fun PhD Student Research Excellence Awards (3rd Prize) </li>
         <li> 2022, CHI 2022 Honourable Mentions Award </li>
@@ -509,10 +570,10 @@ body, html {
         <li> 2015-2017, National Encouragement Scholarship, SZU, China</li>
         <li> 2015-2016, Excellent Student of Academic Performance (First Prize), SZU, China</li>
       </ul>
-    </div>
+    </div> -->
       <!-- Section: Contact
       <div class="w3-container" style="padding:32px 32px" id="contact"> 
-        <h4>Contact</h4>
+        <h3>Contact</h3>
         <i class="fas fa-map-marker-alt"></i> Address: 
         <br>
         <i class="fa fa-envelope"></i> Email: wanling.cai@tcd.ie
@@ -535,7 +596,7 @@ body, html {
   </div> -->
   <br>
 
-  Copyright © Wanling Cai. All rights reserved. Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a>
+  Copyright © Wanling Cai. All rights reserved. 
 
 </footer> 
  
